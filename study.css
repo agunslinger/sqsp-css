@@ -2,14 +2,14 @@
    ABOUT THE STUDY PAGE — MOBILE MORE / LESS
    ================================================== */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
 
   /* --------------------------------------------------
      Add breathing room below the header
      -------------------------------------------------- */
 
-  section[data-section-id="6a57d929e2418d1ea362a718"]
-  .content-wrapper {
+  body#collection-6a57d928e2418d1ea362a698 section[data-section-id="6a57d929e2418d1ea362a718"]
+  .content-wrapper{
     width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
@@ -20,8 +20,8 @@
     padding-bottom: 32px !important;
   }
 
-  section[data-section-id="6a57d929e2418d1ea362a718"]
-  .content {
+  body#collection-6a57d928e2418d1ea362a698 section[data-section-id="6a57d929e2418d1ea362a718"]
+  .content{
     width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
@@ -32,8 +32,8 @@
      Convert the mobile Fluid Engine grid to natural flow
      -------------------------------------------------- */
 
-  section[data-section-id="6a57d929e2418d1ea362a718"]
-  .fluid-engine {
+  body#collection-6a57d928e2418d1ea362a698 section[data-section-id="6a57d929e2418d1ea362a718"]
+  .fluid-engine{
     display: block !important;
     position: relative !important;
 
@@ -55,8 +55,8 @@
      Remove the text block’s fixed grid placement
      -------------------------------------------------- */
 
-  section[data-section-id="6a57d929e2418d1ea362a718"]
-  .fe-block-73692b27afa2e31d76c8 {
+  body#collection-6a57d928e2418d1ea362a698 section[data-section-id="6a57d929e2418d1ea362a718"]
+  .fe-block-73692b27afa2e31d76c8{
     position: relative !important;
     inset: auto !important;
 
@@ -72,10 +72,10 @@
     padding: 0 !important;
   }
 
-  #block-73692b27afa2e31d76c8,
-  #block-73692b27afa2e31d76c8 .sqs-block-content,
-  #block-73692b27afa2e31d76c8 .sqs-text-block-container,
-  #block-73692b27afa2e31d76c8 .sqs-html-content {
+  body#collection-6a57d928e2418d1ea362a698 #block-73692b27afa2e31d76c8,
+body#collection-6a57d928e2418d1ea362a698 #block-73692b27afa2e31d76c8 .sqs-block-content,
+body#collection-6a57d928e2418d1ea362a698 #block-73692b27afa2e31d76c8 .sqs-text-block-container,
+body#collection-6a57d928e2418d1ea362a698 #block-73692b27afa2e31d76c8 .sqs-html-content{
     width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
@@ -91,8 +91,8 @@
      Collapsed paragraph: approximately 12 lines
      -------------------------------------------------- */
 
-  #block-73692b27afa2e31d76c8
-  .life-study-about-paragraph:not(.is-expanded) {
+  body#collection-6a57d928e2418d1ea362a698 #block-73692b27afa2e31d76c8
+  .life-study-about-paragraph:not(.is-expanded){
     display: -webkit-box !important;
     -webkit-box-orient: vertical !important;
     -webkit-line-clamp: 12 !important;
@@ -105,8 +105,8 @@
      Expanded paragraph
      -------------------------------------------------- */
 
-  #block-73692b27afa2e31d76c8
-  .life-study-about-paragraph.is-expanded {
+  body#collection-6a57d928e2418d1ea362a698 #block-73692b27afa2e31d76c8
+  .life-study-about-paragraph.is-expanded{
     display: block !important;
     overflow: visible !important;
     -webkit-line-clamp: unset !important;
@@ -117,8 +117,8 @@
      More / Less button
      -------------------------------------------------- */
 
-  #block-73692b27afa2e31d76c8
-  .life-study-about-toggle {
+  body#collection-6a57d928e2418d1ea362a698 #block-73692b27afa2e31d76c8
+  .life-study-about-toggle{
     display: block !important;
 
     width: fit-content !important;
@@ -146,17 +146,17 @@
    DESKTOP AND TABLET — FULL TEXT
    ================================================== */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
 
-  #block-73692b27afa2e31d76c8
-  .life-study-about-paragraph {
+  body#collection-6a57d928e2418d1ea362a698 #block-73692b27afa2e31d76c8
+  .life-study-about-paragraph{
     display: block !important;
     overflow: visible !important;
     -webkit-line-clamp: unset !important;
   }
 
-  #block-73692b27afa2e31d76c8
-  .life-study-about-toggle {
+  body#collection-6a57d928e2418d1ea362a698 #block-73692b27afa2e31d76c8
+  .life-study-about-toggle{
     display: none !important;
   }
 }

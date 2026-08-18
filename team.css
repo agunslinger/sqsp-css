@@ -11,7 +11,7 @@
    center it, and use moderate spacing between cards.
    -------------------------------------------------- */
 
-ul.user-items-list-item-container.user-items-list-simple {
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple{
   display: grid !important;
 
   grid-template-columns: repeat(3, 262px) !important;
@@ -39,8 +39,8 @@ ul.user-items-list-item-container.user-items-list-simple {
    2. CARD
    -------------------------------------------------- */
 
-ul.user-items-list-item-container.user-items-list-simple
-> li.list-item {
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
+> li.list-item{
   display: flex !important;
   flex-direction: column !important;
   align-items: stretch !important;
@@ -71,9 +71,9 @@ ul.user-items-list-item-container.user-items-list-simple
    Preserve Squarespace image sizing
    -------------------------------------------------- */
 
-ul.user-items-list-item-container.user-items-list-simple
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
 > li.list-item
-.list-item-media {
+.list-item-media{
   width: 100% !important;
   margin: 0 !important;
 
@@ -87,9 +87,9 @@ ul.user-items-list-item-container.user-items-list-simple
    Center directly beneath photograph
    -------------------------------------------------- */
 
-ul.user-items-list-item-container.user-items-list-simple
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
 > li.list-item
-.list-item-content {
+.list-item-content{
   display: block !important;
 
   width: 100% !important;
@@ -103,9 +103,9 @@ ul.user-items-list-item-container.user-items-list-simple
 }
 
 
-ul.user-items-list-item-container.user-items-list-simple
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
 > li.list-item
-.list-item-content > * {
+.list-item-content > *{
   width: 100% !important;
   max-width: 100% !important;
 
@@ -120,8 +120,8 @@ ul.user-items-list-item-container.user-items-list-simple
    5. NAME
    -------------------------------------------------- */
 
-ul.user-items-list-item-container.user-items-list-simple
-.list-item-content__title {
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__title{
   display: block !important;
 
   width: 100% !important;
@@ -134,10 +134,10 @@ ul.user-items-list-item-container.user-items-list-simple
 }
 
 
-ul.user-items-list-item-container.user-items-list-simple
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
 .list-item-content__title,
-ul.user-items-list-item-container.user-items-list-simple
-.list-item-content__title * {
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__title *{
   text-align: center !important;
 }
 
@@ -146,8 +146,8 @@ ul.user-items-list-item-container.user-items-list-simple
    6. DESCRIPTION
    -------------------------------------------------- */
 
-ul.user-items-list-item-container.user-items-list-simple
-.list-item-content__description {
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__description{
   display: block !important;
 
   width: 100% !important;
@@ -160,16 +160,16 @@ ul.user-items-list-item-container.user-items-list-simple
 }
 
 
-ul.user-items-list-item-container.user-items-list-simple
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
 .list-item-content__description,
-ul.user-items-list-item-container.user-items-list-simple
-.list-item-content__description * {
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__description *{
   text-align: center !important;
 }
 
 
-ul.user-items-list-item-container.user-items-list-simple
-.list-item-content__description p {
+body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__description p{
   width: 100% !important;
 
   margin-top: 0 !important;
@@ -178,7 +178,7 @@ ul.user-items-list-item-container.user-items-list-simple
   text-align: center !important;
 }
 
-section[data-section-id="6a5e5dee4191250b93b535d3"] {
+body#collection-6a58057b08e8bd7521cc4dff section[data-section-id="6a5e5dee4191250b93b535d3"]{
   padding-top: 2.6vmax !important;
   padding-bottom: 2.6vmax !important;
 }
@@ -188,17 +188,17 @@ section[data-section-id="6a5e5dee4191250b93b535d3"] {
    7. SUBTLE HOVER
    -------------------------------------------------- */
 
-@media (hover: hover) {
+@media (hover: hover){
 
-  ul.user-items-list-item-container.user-items-list-simple
-  > li.list-item {
+  body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item{
     transition:
       transform 180ms ease,
       box-shadow 180ms ease !important;
   }
 
-  ul.user-items-list-item-container.user-items-list-simple
-  > li.list-item:hover {
+  body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item:hover{
     transform: translateY(-2px) !important;
 
     box-shadow:
@@ -212,9 +212,9 @@ section[data-section-id="6a5e5dee4191250b93b535d3"] {
    8. TABLET
    -------------------------------------------------- */
 
-@media screen and (min-width: 768px) and (max-width: 899px) {
+@media screen and (min-width: 768px) and (max-width: 899px){
 
-  ul.user-items-list-item-container.user-items-list-simple {
+  body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple{
     grid-template-columns: repeat(2, 262px) !important;
 
     column-gap: 32px !important;
@@ -229,9 +229,9 @@ section[data-section-id="6a5e5dee4191250b93b535d3"] {
    9. MOBILE
    -------------------------------------------------- */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
 
-  ul.user-items-list-item-container.user-items-list-simple {
+  body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple{
     grid-template-columns: minmax(0, 262px) !important;
 
     width: 100% !important;
@@ -243,17 +243,17 @@ section[data-section-id="6a5e5dee4191250b93b535d3"] {
     row-gap: 24px !important;
   }
 
-  ul.user-items-list-item-container.user-items-list-simple
-  > li.list-item {
+  body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item{
     width: 262px !important;
     max-width: calc(100vw - 40px) !important;
 
     padding: 8px 8px 16px !important;
   }
 
-  ul.user-items-list-item-container.user-items-list-simple
+  body#collection-6a58057b08e8bd7521cc4dff ul.user-items-list-item-container.user-items-list-simple
   > li.list-item
-  .list-item-content {
+  .list-item-content{
     padding: 13px 4px 0 !important;
   }
 }

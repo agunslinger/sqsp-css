@@ -1,22 +1,26 @@
 (function () {
-  const blockSelector = "#block-73692b27afa2e31d76c8";
+  const blockSelector =
+    "#block-73692b27afa2e31d76c8";
 
   function initializeStudyAboutToggle() {
-    const block = document.querySelector(blockSelector);
+    const block =
+      document.querySelector(blockSelector);
 
     if (!block) {
       return false;
     }
 
-    const textContainer = block.querySelector(".sqs-html-content");
+    const textContainer =
+      block.querySelector(".sqs-html-content");
 
     if (!textContainer) {
       return false;
     }
 
-    const paragraphs = Array.from(
-      textContainer.querySelectorAll("p")
-    );
+    const paragraphs =
+      Array.from(
+        textContainer.querySelectorAll("p")
+      );
 
     const paragraph =
       paragraphs.find(function (item) {
@@ -32,12 +36,14 @@
       "life-study-about-paragraph"
     );
 
-    let button = block.querySelector(
-      ".life-study-about-toggle"
-    );
+    let button =
+      block.querySelector(
+        ".life-study-about-toggle"
+      );
 
     if (!button) {
-      button = document.createElement("button");
+      button =
+        document.createElement("button");
 
       button.type = "button";
       button.className =
