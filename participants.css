@@ -1,0 +1,496 @@
+/* ==================================================
+   LIFE BHS — PARTICIPANTS PAGE
+   ================================================== */
+/* Participants page intentionally has no header drop shadow */
+body#collection-6a5e5993734a5b56a3b26cb6 #header .header-dropshadow{
+  display:none!important;
+  background:none!important;
+  background-image:none!important;
+  height:0!important;
+  opacity:0!important;
+  box-shadow:none!important;
+}
+/* ==================================================
+   PARTICIPANTS PAGE
+   Complete responsive layout fixes
+   ================================================== */
+
+
+/* ==================================================
+   1. PARTICIPANTS HERO
+
+   IMPORTANT DISCOVERY:
+
+   Squarespace places the first section beneath/behind
+   the site header.
+
+   The current header height is exposed through:
+       --header-height
+
+   On desktop this is approximately 156px.
+
+   Because the interior header is solid white, the
+   portion of a background image beneath the header
+   cannot be seen.
+
+   Therefore:
+
+   - preserve the header-height area
+   - start the collage BELOW that area
+   - give the collage its exact 4:1 height
+   - do not crop the image
+   ================================================== */
+
+
+body#collection-6a5e5993734a5b56a3b26cb6
+section[data-section-id="6a5e59ff379d3372d793523d"] {
+  position: relative !important;
+
+  width: 100% !important;
+
+  /*
+     Complete section =
+     header accommodation + complete 4:1 image
+  */
+  height: calc(var(--header-height, 156px) + 25vw) !important;
+  min-height: calc(var(--header-height, 156px) + 25vw) !important;
+  max-height: calc(var(--header-height, 156px) + 25vw) !important;
+
+  /*
+     Keep the Squarespace header accommodation instead
+     of overriding it with padding-top: 0.
+  */
+  padding-top: var(--header-height, 156px) !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+
+  margin: 0 !important;
+
+  box-sizing: border-box !important;
+
+  overflow: hidden !important;
+}
+
+
+/* --------------------------------------------------
+   SECTION BORDER
+
+   Keep this wrapper over the complete section.
+   -------------------------------------------------- */
+
+body#collection-6a5e5993734a5b56a3b26cb6
+section[data-section-id="6a5e59ff379d3372d793523d"]
+> .section-border {
+  position: absolute !important;
+
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden !important;
+}
+
+
+/* --------------------------------------------------
+   BACKGROUND
+
+   Critical fix:
+
+   Background begins AFTER the header rather than
+   beginning underneath the header.
+   -------------------------------------------------- */
+
+body#collection-6a5e5993734a5b56a3b26cb6
+section[data-section-id="6a5e59ff379d3372d793523d"]
+> .section-border
+> .section-background {
+  display: block !important;
+
+  position: absolute !important;
+
+  top: var(--header-height, 156px) !important;
+  right: 0 !important;
+  bottom: auto !important;
+  left: 0 !important;
+
+  width: 100% !important;
+
+  /*
+     Image area itself is exactly 4:1.
+  */
+  height: 25vw !important;
+  min-height: 0 !important;
+  max-height: 25vw !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden !important;
+}
+
+
+/* --------------------------------------------------
+   COLLAGE IMAGE
+
+   Source:
+   9996 x 2499 = exact 4:1 ratio
+   -------------------------------------------------- */
+
+body#collection-6a5e5993734a5b56a3b26cb6
+section[data-section-id="6a5e59ff379d3372d793523d"]
+.section-background
+> img {
+  position: absolute !important;
+
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  min-width: 0 !important;
+  min-height: 0 !important;
+
+  max-width: none !important;
+  max-height: none !important;
+
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+
+  transform: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* --------------------------------------------------
+   BACKGROUND OVERLAY
+
+   Keep Squarespace overlay aligned only with image.
+   -------------------------------------------------- */
+
+body#collection-6a5e5993734a5b56a3b26cb6
+section[data-section-id="6a5e59ff379d3372d793523d"]
+.section-background-overlay {
+  position: absolute !important;
+
+  inset: 0 !important;
+
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/* --------------------------------------------------
+   EMPTY HERO CONTENT
+
+   Hero has no actual content blocks.
+   Prevent Fluid Engine from determining hero height.
+   -------------------------------------------------- */
+
+body#collection-6a5e5993734a5b56a3b26cb6
+section[data-section-id="6a5e59ff379d3372d793523d"]
+> .content-wrapper {
+  position: absolute !important;
+
+  top: var(--header-height, 156px) !important;
+  right: 0 !important;
+  bottom: auto !important;
+  left: 0 !important;
+
+  width: 100% !important;
+  height: 25vw !important;
+
+  min-height: 0 !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  pointer-events: none !important;
+}
+
+
+body#collection-6a5e5993734a5b56a3b26cb6
+section[data-section-id="6a5e59ff379d3372d793523d"]
+> .content-wrapper
+> .content {
+  width: 100% !important;
+  height: 100% !important;
+
+  min-height: 0 !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+/* Empty Fluid Engine grid */
+
+body#collection-6a5e5993734a5b56a3b26cb6
+section[data-section-id="6a5e59ff379d3372d793523d"]
+.fluid-engine.fe-6a5e59ff8510f42e3fb68bf7 {
+  position: absolute !important;
+
+  inset: 0 !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* ==================================================
+   2. PI INTRODUCTION SECTION
+   Hide PI photograph below 1200px and remove all
+   Fluid Engine space reserved for the photograph
+   ================================================== */
+
+@media screen and (max-width: 1199px) {
+
+  /* Hide complete PI photograph block */
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  .fe-block.fe-block-yui_3_17_2_1_1784741222976_1626 {
+    display: none !important;
+  }
+
+
+  /* Collapse outer PI section after hiding photograph */
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cba"],
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cba"]
+  .content-wrapper,
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cba"]
+  .content {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+
+  /* Replace fixed Fluid Engine grid with normal flow */
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cba"]
+  .fluid-engine.fe-6a5e5993734a5b56a3b26cb9 {
+    display: flex !important;
+    position: relative !important;
+
+    flex-direction: column !important;
+    align-items: stretch !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    box-sizing: border-box !important;
+
+    row-gap: 0 !important;
+    column-gap: 0 !important;
+
+    overflow: visible !important;
+  }
+
+
+  /* Return remaining PI-section blocks to normal flow */
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cba"]
+  .fluid-engine.fe-6a5e5993734a5b56a3b26cb9
+  > .fe-block {
+    position: relative !important;
+
+    inset: auto !important;
+    grid-area: auto !important;
+
+    flex: 0 0 auto !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    transform: none !important;
+  }
+
+
+  /* Ensure inner PI-section wrappers use full width */
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cba"]
+  .sqs-block,
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cba"]
+  .sqs-block-content,
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cba"]
+  .sqs-block-alignment-wrapper,
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cba"]
+  .sqs-html-content {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+
+  /* Space between PARTICIPANTS label and main text */
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  .fe-block-b4dc1c3149ff0a759eda {
+    margin-bottom: 18px !important;
+  }
+
+
+  /* Prevent extra space after main PI text */
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  .fe-block-d7972bb2d49aa0364ded {
+    margin-bottom: 0 !important;
+  }
+}
+
+
+/* ==================================================
+   3. PI SECTION — MOBILE SPACING
+   ================================================== */
+
+@media screen and (max-width: 767px) {
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cba"]
+  .fluid-engine.fe-6a5e5993734a5b56a3b26cb9 {
+    padding: 28px 6vw 32px !important;
+  }
+}
+
+
+/* ==================================================
+   4. PI SECTION — TABLET / SMALL DESKTOP
+   ================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cba"]
+  .fluid-engine.fe-6a5e5993734a5b56a3b26cb9 {
+    padding: 42px 8vw 48px !important;
+  }
+}
+
+
+/* ==================================================
+   5. CONTACT TEXT + FORM SECTION
+   Mobile only: remove variable Fluid Engine gap
+   ================================================== */
+
+@media screen and (max-width: 767px) {
+
+  /* Convert contact section from fixed grid to normal flow */
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cbe"]
+  .fluid-engine.fe-6a5e5993734a5b56a3b26cbd {
+    display: flex !important;
+    position: relative !important;
+
+    flex-direction: column !important;
+    align-items: stretch !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    padding: 32px 6vw 38px !important;
+    box-sizing: border-box !important;
+
+    row-gap: 0 !important;
+    column-gap: 0 !important;
+
+    overflow: visible !important;
+  }
+
+
+  /* Return contact text and form blocks to normal flow */
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  section[data-section-id="6a5e5993734a5b56a3b26cbe"]
+  .fluid-engine.fe-6a5e5993734a5b56a3b26cbd
+  > .fe-block {
+    position: relative !important;
+
+    inset: auto !important;
+    grid-area: auto !important;
+
+    flex: 0 0 auto !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    transform: none !important;
+  }
+
+
+  /* Controlled gap between intro text and form */
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  .fe-block-a4795fc72606a034f6f6 {
+    margin-bottom: 36px !important;
+  }
+
+
+  /* Ensure form fills available width */
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  #block-2b5acfc8ab08ff48a4d1,
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  #block-2b5acfc8ab08ff48a4d1
+  .sqs-block-content,
+
+  body#collection-6a5e5993734a5b56a3b26cb6
+  #block-2b5acfc8ab08ff48a4d1
+  .form-wrapper {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}

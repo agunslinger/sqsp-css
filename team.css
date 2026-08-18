@@ -1,0 +1,259 @@
+/* ==================================================
+   TEAM PAGE
+   Compact centered three-card group
+   ================================================== */
+
+
+/* --------------------------------------------------
+   1. ACTUAL SQUARESPACE LIST CONTAINER
+
+   Keep the three-card grid only as wide as needed,
+   center it, and use moderate spacing between cards.
+   -------------------------------------------------- */
+
+ul.user-items-list-item-container.user-items-list-simple {
+  display: grid !important;
+
+  grid-template-columns: repeat(3, 262px) !important;
+  grid-auto-columns: 262px !important;
+
+  justify-content: center !important;
+  justify-items: center !important;
+  align-items: start !important;
+
+  column-gap: 100px !important;
+  row-gap: 30px !important;
+
+  width: max-content !important;
+  max-width: 100% !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+/* --------------------------------------------------
+   2. CARD
+   -------------------------------------------------- */
+
+ul.user-items-list-item-container.user-items-list-simple
+> li.list-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+
+  width: 262px !important;
+  max-width: 262px !important;
+
+  margin: 0 !important;
+
+  background-color: var(--life-white) !important;
+
+  border: 1px solid rgba(0, 0, 0, 0.07) !important;
+  border-radius: 10px !important;
+
+  padding: 10px 10px 18px !important;
+
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.05),
+    0 8px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+
+/* --------------------------------------------------
+   3. PHOTO
+   Preserve Squarespace image sizing
+   -------------------------------------------------- */
+
+ul.user-items-list-item-container.user-items-list-simple
+> li.list-item
+.list-item-media {
+  width: 100% !important;
+  margin: 0 !important;
+
+  border-radius: 7px !important;
+  overflow: hidden !important;
+}
+
+
+/* --------------------------------------------------
+   4. TEXT CONTENT
+   Center directly beneath photograph
+   -------------------------------------------------- */
+
+ul.user-items-list-item-container.user-items-list-simple
+> li.list-item
+.list-item-content {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+
+  margin: 0 !important;
+  padding: 14px 4px 0 !important;
+
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+
+
+ul.user-items-list-item-container.user-items-list-simple
+> li.list-item
+.list-item-content > * {
+  width: 100% !important;
+  max-width: 100% !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  text-align: center !important;
+}
+
+
+/* --------------------------------------------------
+   5. NAME
+   -------------------------------------------------- */
+
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__title {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+
+  margin: 0 0 5px !important;
+  padding: 0 !important;
+
+  text-align: center !important;
+}
+
+
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__title,
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__title * {
+  text-align: center !important;
+}
+
+
+/* --------------------------------------------------
+   6. DESCRIPTION
+   -------------------------------------------------- */
+
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__description {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  text-align: center !important;
+}
+
+
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__description,
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__description * {
+  text-align: center !important;
+}
+
+
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__description p {
+  width: 100% !important;
+
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+
+  text-align: center !important;
+}
+
+section[data-section-id="6a5e5dee4191250b93b535d3"] {
+  padding-top: 2.6vmax !important;
+  padding-bottom: 2.6vmax !important;
+}
+
+  
+/* --------------------------------------------------
+   7. SUBTLE HOVER
+   -------------------------------------------------- */
+
+@media (hover: hover) {
+
+  ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item {
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease !important;
+  }
+
+  ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item:hover {
+    transform: translateY(-2px) !important;
+
+    box-shadow:
+      0 4px 10px rgba(0, 0, 0, 0.07),
+      0 12px 26px rgba(0, 0, 0, 0.07) !important;
+  }
+}
+
+
+/* --------------------------------------------------
+   8. TABLET
+   -------------------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+
+  ul.user-items-list-item-container.user-items-list-simple {
+    grid-template-columns: repeat(2, 262px) !important;
+
+    column-gap: 32px !important;
+    row-gap: 30px !important;
+
+    width: max-content !important;
+  }
+}
+
+
+/* --------------------------------------------------
+   9. MOBILE
+   -------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+
+  ul.user-items-list-item-container.user-items-list-simple {
+    grid-template-columns: minmax(0, 262px) !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    justify-content: center !important;
+
+    column-gap: 0 !important;
+    row-gap: 24px !important;
+  }
+
+  ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item {
+    width: 262px !important;
+    max-width: calc(100vw - 40px) !important;
+
+    padding: 8px 8px 16px !important;
+  }
+
+  ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item
+  .list-item-content {
+    padding: 13px 4px 0 !important;
+  }
+}

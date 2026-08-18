@@ -1,0 +1,82 @@
+/* ==================================================
+   LIFE BHS — FAQ ACCORDION CARD STYLE
+   ================================================== */
+.sqs-block-accordion {
+  --accordion-description-width: 100% !important;
+  --accordion-description-padding-bottom: 10px !important;
+}
+.sqs-block-accordion .accordion-item {
+  margin-bottom: 20px !important;
+  background: #f7f8f7 !important;
+  border: 1px solid rgba(0,0,0,.08) !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+.sqs-block-accordion .accordion-item__click-target {
+  position: relative !important;
+  padding: 18px 52px 18px 20px !important;
+}
+.sqs-block-accordion .accordion-item__title {
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+}
+.sqs-block-accordion .accordion-item__dropdown {
+  padding: 0 20px 18px 20px !important;
+}
+.sqs-block-accordion .accordion-item__description p:first-child {
+  margin-top: 0 !important;
+}
+.sqs-block-accordion .accordion-item__description p:last-child {
+  margin-bottom: 0 !important;
+}
+/* Hide Squarespace's default plus/minus icon */
+.sqs-block-accordion .accordion-icon-container {
+  display: none !important;
+}
+/* Closed state: right-facing chevron */
+.sqs-block-accordion .accordion-item__click-target::after {
+  content: "›";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  display: block;
+  color: var(--life-blue);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+  transform: translateY(-50%) rotate(0deg);
+  transform-origin: center;
+  transition: transform .2s ease;
+}
+/* Open state: rotate chevron downward */
+.sqs-block-accordion .accordion-item[data-is-open="true"] .accordion-item__click-target::after,
+.sqs-block-accordion .accordion-item[open] .accordion-item__click-target::after,
+.sqs-block-accordion .accordion-item.accordion-item--open .accordion-item__click-target::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+.sqs-block-accordion .accordion-item:hover {
+  background: #f3f5f3 !important;
+}
+.sqs-block-accordion .accordion-divider {
+  display: none !important;
+}
+/* FAQ — first section background */
+section[data-section-id="6a7b4a72f880b15fb8c3597d"] .section-background {
+  background-color: var(--life-offwhite) !important;
+}
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .sqs-block-accordion .accordion-item__click-target {
+    padding: 16px 46px 16px 16px !important;
+  }
+  .sqs-block-accordion .accordion-item__dropdown {
+    padding: 0 16px 16px 16px !important;
+  }
+  .sqs-block-accordion .accordion-item {
+    margin-bottom: 10px !important;
+  }
+  .sqs-block-accordion .accordion-item__click-target::after {
+    right: 16px;
+    font-size: 1.8rem;
+  }
+}
