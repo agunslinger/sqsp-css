@@ -71,7 +71,15 @@ section[data-section-id="6a5e59ff379d3372d793523d"] {
 
   overflow: hidden !important;
 }
-
+/* ==================================================
+   PARTICIPANTS PAGE — OFF-WHITE FOOTER
+   ================================================== */
+body#collection-6a5e5993734a5b56a3b26cb6
+section[data-section-id="6a57d929e2418d1ea362a764"],
+body#collection-6a5e5993734a5b56a3b26cb6
+section[data-section-id="6a57d929e2418d1ea362a764"] .section-background{
+  background-color:var(--life-offwhite,#fcfcfb)!important;
+}
 
 /* --------------------------------------------------
    SECTION BORDER
