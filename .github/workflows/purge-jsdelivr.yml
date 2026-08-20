@@ -1,0 +1,31 @@
+name: Purge jsDelivr CSS Cache
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "site.css"
+      - "home.css"
+      - "participants.css"
+      - "study.css"
+      - "team.css"
+      - "faq.css"
+
+  workflow_dispatch:
+
+jobs:
+  purge-jsdelivr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Purge jsDelivr cache
+        uses: gacts/purge-jsdelivr-cache@v1
+        with:
+          url: |
+            https://cdn.jsdelivr.net/gh/agunslinger/sqsp-css@main/site.css
+            https://cdn.jsdelivr.net/gh/agunslinger/sqsp-css@main/home.css
+            https://cdn.jsdelivr.net/gh/agunslinger/sqsp-css@main/participants.css
+            https://cdn.jsdelivr.net/gh/agunslinger/sqsp-css@main/study.css
+            https://cdn.jsdelivr.net/gh/agunslinger/sqsp-css@main/team.css
+            https://cdn.jsdelivr.net/gh/agunslinger/sqsp-css@main/faq.css
