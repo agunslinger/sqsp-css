@@ -1,0 +1,342 @@
+/* ==================================================
+   LIFE BHS — PARTNERS PAGE
+   Compact horizontal-logo cards
+   Full logo visible
+   Section:
+   6a8744d3ad86aa4913bebc56
+   ================================================== */
+
+/* --------------------------------------------------
+   1. CARD GRID
+   -------------------------------------------------- */
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple{
+  display:grid!important;
+  grid-template-columns:repeat(3,262px)!important;
+  grid-auto-columns:262px!important;
+  justify-content:center!important;
+  justify-items:center!important;
+  align-items:start!important;
+  column-gap:100px!important;
+  row-gap:30px!important;
+  width:max-content!important;
+  max-width:100%!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  padding-left:0!important;
+  padding-right:0!important;
+}
+
+/* --------------------------------------------------
+   2. CARD
+   -------------------------------------------------- */
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+> li.list-item{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:stretch!important;
+  width:262px!important;
+  max-width:262px!important;
+  margin:0!important;
+  padding:10px 10px 14px!important;
+  background:#ffffff!important;
+  border:1px solid rgba(0,0,0,.07)!important;
+  border-radius:10px!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+  box-shadow:
+    0 2px 6px rgba(0,0,0,.05),
+    0 8px 20px rgba(0,0,0,.05)!important;
+}
+
+/* --------------------------------------------------
+   3. LOGO AREA
+   -------------------------------------------------- */
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+> li.list-item
+.list-item-media{
+  display:flex!important;
+  position:relative!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:100%!important;
+  height:126px!important;
+  min-height:126px!important;
+  max-height:126px!important;
+  margin:0!important;
+  padding:6px 8px!important;
+  background:#ffffff!important;
+  border-radius:7px!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+}
+
+/* --------------------------------------------------
+   4. RESET SQUARESPACE MEDIA WRAPPERS
+   -------------------------------------------------- */
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-media-inner,
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-media .image-wrapper,
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-media .sqs-image-shape-container-element,
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-media .intrinsic{
+  display:flex!important;
+  position:relative!important;
+  top:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  left:auto!important;
+  inset:auto!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:100%!important;
+  height:100%!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:100%!important;
+  max-height:100%!important;
+  margin:0!important;
+  padding:0!important;
+  padding-bottom:0!important;
+  aspect-ratio:auto!important;
+  overflow:hidden!important;
+  background-size:contain!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+}
+
+/* --------------------------------------------------
+   5. FULL LOGO IMAGE
+   -------------------------------------------------- */
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-media img,
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-media-inner img,
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.sqs-image-shape-container-element img,
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.intrinsic img{
+  display:block!important;
+  position:relative!important;
+  top:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  left:auto!important;
+  inset:auto!important;
+  width:auto!important;
+  height:auto!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:100%!important;
+  max-height:112px!important;
+  margin:auto!important;
+  padding:0!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  transform:none!important;
+}
+
+/* --------------------------------------------------
+   6. REMOVE SQUARESPACE ABSOLUTE IMAGE CROPPING
+   -------------------------------------------------- */
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-media img[data-image],
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-media img.loaded{
+  position:relative!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:100%!important;
+  max-height:112px!important;
+  object-fit:contain!important;
+}
+
+/* --------------------------------------------------
+   7. SMALL-LOGO BOOSTS
+   Temporary until source logo canvases are standardized
+   -------------------------------------------------- */
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+> li.list-item:nth-child(1)
+.list-item-media img{
+  max-height:122px!important;
+  max-width:108%!important;
+}
+
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+> li.list-item:nth-child(4)
+.list-item-media img{
+  max-height:118px!important;
+  max-width:104%!important;
+}
+
+/* --------------------------------------------------
+   8. TITLE AREA
+   -------------------------------------------------- */
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+> li.list-item
+.list-item-content{
+  display:block!important;
+  width:100%!important;
+  max-width:100%!important;
+  margin:0!important;
+  padding:10px 4px 0!important;
+  box-sizing:border-box!important;
+  text-align:center!important;
+}
+
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+> li.list-item
+.list-item-content > *{
+  width:100%!important;
+  max-width:100%!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+}
+
+/* --------------------------------------------------
+   9. TITLE
+   -------------------------------------------------- */
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__title{
+  display:block!important;
+  width:100%!important;
+  max-width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  text-align:center!important;
+  line-height:1.3!important;
+}
+
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__title,
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__title *{
+  text-align:center!important;
+}
+
+/* --------------------------------------------------
+   10. DESCRIPTION
+   -------------------------------------------------- */
+section[data-section-id="6a8744d3ad86aa4913bebc56"]
+ul.user-items-list-item-container.user-items-list-simple
+.list-item-content__description{
+  display:none!important;
+}
+
+/* --------------------------------------------------
+   11. SECTION SPACING
+   -------------------------------------------------- */
+section[data-section-id="6a8744d3ad86aa4913bebc56"]{
+  padding-top:2.6vmax!important;
+  padding-bottom:2.6vmax!important;
+}
+
+/* --------------------------------------------------
+   12. HOVER
+   -------------------------------------------------- */
+@media (hover:hover){
+  section[data-section-id="6a8744d3ad86aa4913bebc56"]
+  ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item{
+    transition:
+      transform 180ms ease,
+      box-shadow 180ms ease!important;
+  }
+
+  section[data-section-id="6a8744d3ad86aa4913bebc56"]
+  ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item:hover{
+    transform:translateY(-2px)!important;
+    box-shadow:
+      0 4px 10px rgba(0,0,0,.07),
+      0 12px 26px rgba(0,0,0,.07)!important;
+  }
+}
+
+/* --------------------------------------------------
+   13. TABLET
+   -------------------------------------------------- */
+@media screen and (min-width:768px) and (max-width:899px){
+  section[data-section-id="6a8744d3ad86aa4913bebc56"]
+  ul.user-items-list-item-container.user-items-list-simple{
+    grid-template-columns:repeat(2,262px)!important;
+    column-gap:32px!important;
+    row-gap:30px!important;
+    width:max-content!important;
+  }
+}
+
+/* --------------------------------------------------
+   14. MOBILE
+   -------------------------------------------------- */
+@media screen and (max-width:767px){
+  section[data-section-id="6a8744d3ad86aa4913bebc56"]
+  ul.user-items-list-item-container.user-items-list-simple{
+    grid-template-columns:minmax(0,262px)!important;
+    width:100%!important;
+    max-width:100%!important;
+    justify-content:center!important;
+    column-gap:0!important;
+    row-gap:20px!important;
+  }
+
+  section[data-section-id="6a8744d3ad86aa4913bebc56"]
+  ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item{
+    width:262px!important;
+    max-width:calc(100vw - 40px)!important;
+    padding:8px 8px 12px!important;
+  }
+
+  section[data-section-id="6a8744d3ad86aa4913bebc56"]
+  ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item
+  .list-item-media{
+    height:112px!important;
+    min-height:112px!important;
+    max-height:112px!important;
+    padding:6px 8px!important;
+  }
+
+  section[data-section-id="6a8744d3ad86aa4913bebc56"]
+  ul.user-items-list-item-container.user-items-list-simple
+  .list-item-media img,
+  section[data-section-id="6a8744d3ad86aa4913bebc56"]
+  ul.user-items-list-item-container.user-items-list-simple
+  .list-item-media img[data-image],
+  section[data-section-id="6a8744d3ad86aa4913bebc56"]
+  ul.user-items-list-item-container.user-items-list-simple
+  .list-item-media img.loaded{
+    max-width:100%!important;
+    max-height:96px!important;
+  }
+
+  section[data-section-id="6a8744d3ad86aa4913bebc56"]
+  ul.user-items-list-item-container.user-items-list-simple
+  > li.list-item
+  .list-item-content{
+    padding:9px 4px 0!important;
+  }
+}
