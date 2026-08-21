@@ -6,8 +6,9 @@
     "https://www.upike.edu/",
     "https://www.marshall.edu/",
     "https://med.uc.edu/institutes/development/center-for-alzheimers-and-neurodegenerative-diseases-research",
-	"https://www.uchealth.com/en/cancer-center",
-    "https://www.kroger.com/"
+	"https://www.kroger.com/",
+	"https://www.uchealth.com/en/cancer-center"
+
   ];
 
   function makePartnerCardsClickable() {
