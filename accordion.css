@@ -38,7 +38,7 @@ LIFE-BHS — SHARED ACCORDION CARD STYLE
 .sqs-block-accordion .accordion-item__title h4,
 .sqs-block-accordion .accordion-item__title h5,
 .sqs-block-accordion .accordion-item__title h6{
-  font-size:1rem!important;
+  font-size:0.95rem!important;
   font-weight:500!important;
   line-height:1.35!important;
 }
