@@ -2,11 +2,19 @@
 LIFE-BHS — SHARED ACCORDION CARD STYLE
 ================================================== */
 
+/* ==================================================
+   LIFE BHS — SHARED ACCORDION CARD STYLE
+   Reusable across FAQ, Resources, and other pages
+   ================================================== */
+
 .sqs-block-accordion{
   --accordion-description-width:100%!important;
   --accordion-description-padding-bottom:10px!important;
 }
 
+/* --------------------------------------------------
+   ACCORDION CARD
+   -------------------------------------------------- */
 .sqs-block-accordion .accordion-item{
   margin-bottom:20px!important;
   background:#d9e3ea!important;
@@ -15,6 +23,9 @@ LIFE-BHS — SHARED ACCORDION CARD STYLE
   overflow:hidden!important;
 }
 
+/* --------------------------------------------------
+   ACCORDION HEADING / CLICK TARGET
+   -------------------------------------------------- */
 .sqs-block-accordion .accordion-item__click-target{
   position:relative!important;
   padding:18px 52px 18px 20px!important;
@@ -25,6 +36,9 @@ LIFE-BHS — SHARED ACCORDION CARD STYLE
   line-height:1.35!important;
 }
 
+/* --------------------------------------------------
+   EXPANDED CONTENT
+   -------------------------------------------------- */
 .sqs-block-accordion .accordion-item__dropdown{
   padding:0 20px 18px 20px!important;
 }
@@ -37,12 +51,18 @@ LIFE-BHS — SHARED ACCORDION CARD STYLE
   margin-bottom:0!important;
 }
 
-/* Hide Squarespace default plus/minus icon */
+/* --------------------------------------------------
+   HIDE DEFAULT SQUARESPACE ICON
+   -------------------------------------------------- */
 .sqs-block-accordion .accordion-icon-container{
   display:none!important;
 }
 
-/* Closed state: right-facing chevron */
+/* --------------------------------------------------
+   CUSTOM CHEVRON
+   Closed = points right
+   Open = points down
+   -------------------------------------------------- */
 .sqs-block-accordion .accordion-item__click-target::after{
   content:"›";
   position:absolute;
@@ -58,22 +78,30 @@ LIFE-BHS — SHARED ACCORDION CARD STYLE
   transition:transform .2s ease;
 }
 
-/* Open state: rotate chevron downward */
 .sqs-block-accordion .accordion-item[data-is-open="true"] .accordion-item__click-target::after,
 .sqs-block-accordion .accordion-item[open] .accordion-item__click-target::after,
 .sqs-block-accordion .accordion-item.accordion-item--open .accordion-item__click-target::after{
   transform:translateY(-50%) rotate(90deg);
 }
 
+/* --------------------------------------------------
+   HOVER
+   -------------------------------------------------- */
 .sqs-block-accordion .accordion-item:hover{
   background:#f8fafc!important;
 }
 
+/* --------------------------------------------------
+   REMOVE DEFAULT DIVIDERS
+   -------------------------------------------------- */
 .sqs-block-accordion .accordion-divider{
   display:none!important;
 }
 
-/* Accordion description links — small CTA button */
+/* --------------------------------------------------
+   LINKS INSIDE EXPANDED ACCORDION CONTENT
+   Styled as small LIFE-BHS CTA buttons
+   -------------------------------------------------- */
 .sqs-block-accordion .accordion-item__description a{
   display:inline-block;
   margin-top:12px;
@@ -94,7 +122,9 @@ LIFE-BHS — SHARED ACCORDION CARD STYLE
   transform:translateY(-1px);
 }
 
-/* Mobile */
+/* --------------------------------------------------
+   MOBILE
+   -------------------------------------------------- */
 @media screen and (max-width:767px){
   .sqs-block-accordion .accordion-item__click-target{
     padding:16px 46px 16px 16px!important;
@@ -106,5 +136,10 @@ LIFE-BHS — SHARED ACCORDION CARD STYLE
 
   .sqs-block-accordion .accordion-item{
     margin-bottom:10px!important;
+  }
+
+  .sqs-block-accordion .accordion-item__click-target::after{
+    right:16px;
+    font-size:1.8rem;
   }
 }
