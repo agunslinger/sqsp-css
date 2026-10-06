@@ -90,6 +90,17 @@ a.sqs-button-element--secondary:hover {
   border-color: var(--life-blue-hover) !important;
   color: var(--life-white) !important;
 }
+
+
+
+/* ==================================================
+   HEADER — DESKTOP NAVIGATION FONT SIZE
+   ================================================== */
+#header .header-nav-item a,
+#header .header-nav-folder-title{
+  font-size:clamp(15px,1vw,16px)!important;
+}
+
 /* ==================================================
    INDIVIDUAL NEWS POSTS
    ================================================== */
