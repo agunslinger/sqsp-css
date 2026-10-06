@@ -238,19 +238,6 @@
     width:100%;
   }
 
-  .life-resource-icon{
-    min-height:70px;
-    padding:10px 18px 8px;
-  }
-
-  .life-resource-icon svg{
-    width:54px;
-    height:54px;
-    max-width:54px;
-    max-height:54px;
-    flex:0 0 54px;
-  }
-
   .life-resource-title{
     padding:11px 14px;
     font-size:1.08rem;
