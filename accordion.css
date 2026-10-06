@@ -1,51 +1,83 @@
 /* ==================================================
-   LIFE BHS — SHARED ACCORDION CARD STYLE
-   Reusable across FAQ, Resources, and other pages
+   LIFE BHS — SHARED SQUARESPACE ACCORDION STYLE
+   Native Squarespace accordions styled to match
+   the LIFE-BHS Resources / Home card system
    ================================================== */
 
+/* --------------------------------------------------
+   ACCORDION BLOCK
+   -------------------------------------------------- */
 .sqs-block-accordion{
   --accordion-description-width:100%!important;
-  --accordion-description-padding-bottom:10px!important;
+  --accordion-description-padding-bottom:0!important;
 }
 
 /* --------------------------------------------------
-   ACCORDION CARD
+   INDIVIDUAL FAQ CARD
    -------------------------------------------------- */
 .sqs-block-accordion .accordion-item{
-  margin-bottom:20px!important;
-  background:#d9e3ea!important;
-  border:1px solid rgba(5,65,124,.12)!important;
-  border-radius:10px!important;
+  margin:0 0 12px!important;
+  background:var(--life-white)!important;
+  border:1px solid rgba(0,0,0,.12)!important;
+  border-radius:0!important;
+  box-shadow:0 3px 10px rgba(0,0,0,.06)!important;
   overflow:hidden!important;
 }
 
-/* --------------------------------------------------
-   ACCORDION HEADING / CLICK TARGET
-   -------------------------------------------------- */
-.sqs-block-accordion .accordion-item__title{
-  text-align:center!important;
-  font-weight:500!important;
-  font-size:19px!important;
-  line-height:1.35!important;
-}
-
-/* --------------------------------------------------
-   EXPANDED CONTENT
-   -------------------------------------------------- */
-.sqs-block-accordion .accordion-item__dropdown{
-  padding:0 20px 18px 20px!important;
-}
-
-.sqs-block-accordion .accordion-item__description p:first-child{
-  margin-top:0!important;
-}
-
-.sqs-block-accordion .accordion-item__description p:last-child{
+.sqs-block-accordion .accordion-item:last-child{
   margin-bottom:0!important;
 }
 
 /* --------------------------------------------------
-   HIDE DEFAULT SQUARESPACE ICON
+   TITLE WRAPPER
+   -------------------------------------------------- */
+.sqs-block-accordion .accordion-item__title-wrapper{
+  margin:0!important;
+  padding:0!important;
+}
+
+/* --------------------------------------------------
+   TITLE BAR / CLICK TARGET
+   Matches Resources title-band language
+   -------------------------------------------------- */
+.sqs-block-accordion .accordion-item__click-target{
+  position:relative!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:100%!important;
+  min-height:54px!important;
+  box-sizing:border-box!important;
+  margin:0!important;
+  padding:14px 52px 14px 52px!important;
+  background:#E3EDF3!important;
+  border:0!important;
+  color:#17384D!important;
+  text-align:center!important;
+}
+
+/* Alternate subtle band tone */
+.sqs-block-accordion .accordion-item:nth-child(even) .accordion-item__click-target{
+  background:#DDE9F0!important;
+}
+
+/* --------------------------------------------------
+   FAQ TITLE
+   -------------------------------------------------- */
+.sqs-block-accordion .accordion-item__title{
+  display:block!important;
+  width:100%!important;
+  margin:0!important;
+  color:#17384D!important;
+  font-family:var(--life-font)!important;
+  font-size:clamp(1rem,1.1vw,1.08rem)!important;
+  font-weight:600!important;
+  line-height:1.35!important;
+  text-align:center!important;
+}
+
+/* --------------------------------------------------
+   HIDE DEFAULT SQUARESPACE PLUS / MINUS
    -------------------------------------------------- */
 .sqs-block-accordion .accordion-icon-container{
   display:none!important;
@@ -53,22 +85,20 @@
 
 /* --------------------------------------------------
    CUSTOM CHEVRON
-   Closed = points right
-   Open = points down
    -------------------------------------------------- */
 .sqs-block-accordion .accordion-item__click-target::after{
   content:"›";
   position:absolute;
   top:50%;
-  right:20px;
+  right:18px;
   display:block;
   color:var(--life-blue);
-  font-size:2rem;
+  font-size:1.8rem;
   font-weight:400;
   line-height:1;
   transform:translateY(-50%) rotate(0deg);
   transform-origin:center;
-  transition:transform .2s ease;
+  transition:transform .18s ease;
 }
 
 .sqs-block-accordion .accordion-item[data-is-open="true"] .accordion-item__click-target::after,
@@ -78,61 +108,128 @@
 }
 
 /* --------------------------------------------------
-   HOVER
+   TITLE HOVER
    -------------------------------------------------- */
-.sqs-block-accordion .accordion-item:hover{
-  background:#f8fafc!important;
+@media (hover:hover){
+  .sqs-block-accordion .accordion-item__click-target:hover{
+    background:#D6E5EE!important;
+  }
+
+  .sqs-block-accordion .accordion-item:nth-child(even) .accordion-item__click-target:hover{
+    background:#CFDFE8!important;
+  }
 }
 
 /* --------------------------------------------------
-   REMOVE DEFAULT DIVIDERS
+   EXPANDED CONTENT
+   -------------------------------------------------- */
+.sqs-block-accordion .accordion-item__dropdown{
+  width:100%!important;
+  box-sizing:border-box!important;
+  margin:0!important;
+  padding:0!important;
+  background:var(--life-white)!important;
+  border-top:1px solid var(--life-blue-border-soft)!important;
+}
+
+.sqs-block-accordion .accordion-item__description{
+  width:100%!important;
+  max-width:none!important;
+  box-sizing:border-box!important;
+  padding:18px 20px 20px!important;
+  color:var(--life-body)!important;
+  font-family:var(--life-font)!important;
+  font-size:.98rem!important;
+  line-height:1.6!important;
+  text-align:left!important;
+}
+
+/* --------------------------------------------------
+   DESCRIPTION PARAGRAPHS
+   -------------------------------------------------- */
+.sqs-block-accordion .accordion-item__description p{
+  margin-top:0!important;
+  margin-bottom:12px!important;
+}
+
+.sqs-block-accordion .accordion-item__description p:last-child{
+  margin-bottom:0!important;
+}
+
+/* --------------------------------------------------
+   NORMAL INLINE LINKS
+   -------------------------------------------------- */
+.sqs-block-accordion .accordion-item__description a{
+  color:var(--life-blue)!important;
+  font-weight:600!important;
+  text-decoration:underline!important;
+  text-decoration-thickness:1px!important;
+  text-underline-offset:3px!important;
+}
+
+.sqs-block-accordion .accordion-item__description a:hover{
+  color:var(--life-blue-hover)!important;
+}
+
+/* --------------------------------------------------
+   LAST-PARAGRAPH STANDALONE LINK
+   Makes View More / Learn More links into CTA buttons
+   -------------------------------------------------- */
+.sqs-block-accordion .accordion-item__description p:last-child > a:only-child{
+  display:inline-block!important;
+  margin-top:4px!important;
+  padding:7px 13px!important;
+  background:var(--life-blue)!important;
+  border:1px solid var(--life-blue)!important;
+  border-radius:4px!important;
+  color:var(--life-white)!important;
+  font-size:.86rem!important;
+  font-weight:600!important;
+  line-height:1.2!important;
+  text-decoration:none!important;
+  transition:background-color .18s ease,border-color .18s ease,transform .18s ease!important;
+}
+
+.sqs-block-accordion .accordion-item__description p:last-child > a:only-child:hover{
+  background:var(--life-blue-hover)!important;
+  border-color:var(--life-blue-hover)!important;
+  color:var(--life-white)!important;
+  transform:translateY(-1px)!important;
+}
+
+/* --------------------------------------------------
+   REMOVE SQUARESPACE DIVIDERS
    -------------------------------------------------- */
 .sqs-block-accordion .accordion-divider{
   display:none!important;
 }
 
 /* --------------------------------------------------
-   LINKS INSIDE EXPANDED ACCORDION CONTENT
-   Styled as small LIFE-BHS CTA buttons
-   -------------------------------------------------- */
-.sqs-block-accordion .accordion-item__description a{
-  display:inline-block;
-  margin-top:12px;
-  padding:7px 14px;
-  background:var(--life-blue);
-  color:var(--life-white)!important;
-  border-radius:6px;
-  text-decoration:none!important;
-  font-family:var(--life-font);
-  font-size:.88rem;
-  font-weight:600;
-  line-height:1.2;
-  transition:background-color .18s ease,transform .18s ease;
-}
-
-.sqs-block-accordion .accordion-item__description a:hover{
-  background:var(--life-blue-hover);
-  transform:translateY(-1px);
-}
-
-/* --------------------------------------------------
    MOBILE
    -------------------------------------------------- */
 @media screen and (max-width:767px){
-  .sqs-block-accordion .accordion-item__click-target{
-    padding:16px 46px 16px 16px!important;
-  }
-
-  .sqs-block-accordion .accordion-item__dropdown{
-    padding:0 16px 16px 16px!important;
-  }
-
   .sqs-block-accordion .accordion-item{
     margin-bottom:10px!important;
   }
 
+  .sqs-block-accordion .accordion-item__click-target{
+    min-height:50px!important;
+    padding:13px 44px 13px 18px!important;
+  }
+
+  .sqs-block-accordion .accordion-item__title{
+    font-size:1rem!important;
+    line-height:1.35!important;
+  }
+
   .sqs-block-accordion .accordion-item__click-target::after{
-    right:16px;
-    font-size:1.8rem;
+    right:15px!important;
+    font-size:1.6rem!important;
+  }
+
+  .sqs-block-accordion .accordion-item__description{
+    padding:16px 16px 18px!important;
+    font-size:.96rem!important;
+    line-height:1.55!important;
   }
 }
