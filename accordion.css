@@ -23,14 +23,9 @@
    ACCORDION HEADING / CLICK TARGET
    -------------------------------------------------- */
 .sqs-block-accordion .accordion-item__title{
-  font-size:0.95rem!important;
+  text-align:center!important;
   font-weight:500!important;
-  line-height:1.35!important;
-}
-
-.sqs-block-accordion .accordion-item__click-target h4{
-  font-size:0.75rem!important;
-  font-weight:500!important;
+  font-size:19px!important;
   line-height:1.35!important;
 }
 
